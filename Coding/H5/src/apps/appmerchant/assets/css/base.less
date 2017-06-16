@@ -1,0 +1,28 @@
+// 换肤样式
+@import url('~assets/css/skin-peeler/blue-skin.less'); //蓝色
+
+// 引入base样式
+@import url('~assets/css/base.less');
+
+@import url('~assets/css/page-animation.less');
+
+// 按钮的公共样式
+.btn {
+    width: 90%;
+    height: 45px;
+    line-height: 45px;
+    border: none;
+    outline: none;
+    border-radius: 0.06rem;
+	background-color: @default-bg-btn-color;
+    color: @default-font-btn-color;
+    margin: 0 5%;
+    font-size: @hm-font-size-base;
+    &.active {
+    	background-color: @link-bg-btn-color;
+    }
+    &:active{
+        background-color: @active-bg-btn-color;
+    }
+}
+

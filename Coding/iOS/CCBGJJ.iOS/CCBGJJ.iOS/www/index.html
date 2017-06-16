@@ -1,0 +1,154 @@
+<!doctype html>
+<html><head>
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<style type='text/css'>
+		html { font-family:Helvetica; color:#222; }
+		h1 { color:steelblue; font-size:24px; margin-top:24px; }
+		button { margin:0 3px 10px; font-size:12px; }
+		.logLine { border-bottom:1px solid #ccc; padding:4px 2px; font-family:courier; font-size:11px; }
+	</style>
+</head><body>
+	<h1>WebViewJavascriptBridge Demo</h1>
+    <script type="text/javascript" src="native_func.js"></script>
+	<script>
+	window.onerror = function(err) {
+		log('window.onerror: ' + err)
+	}
+
+    var nativeFunc;
+    function setupWebViewJavascriptBridge(callback) {
+        if (window.WebViewJavascriptBridge) { return callback(WebViewJavascriptBridge); }
+        if (window.WVJBCallbacks) { return window.WVJBCallbacks.push(callback); }
+        window.WVJBCallbacks = [callback];
+        var WVJBIframe = document.createElement('iframe');
+        WVJBIframe.style.display = 'none';
+        WVJBIframe.src = 'https://__bridge_loaded__';
+        document.documentElement.appendChild(WVJBIframe);
+        setTimeout(function() { document.documentElement.removeChild(WVJBIframe) }, 0);
+        //兼容Android端
+        document.addEventListener(
+           'WebViewJavascriptBridgeReady'
+           , function() {
+               callback(WebViewJavascriptBridge)
+           },
+           false
+       );
+        
+    }
+
+
+    setupWebViewJavascriptBridge(function(bridge) {
+        nativeFunc = new nativeFunc(bridge);
+
+        //初始化,Android用到
+        if(bridge.init && typeof(bridge.init)=="function") { 
+	        bridge.init(function(message, responseCallback) {
+	           var data = {
+	               'Javascript Responds': 'Wee!'
+	           };
+	           responseCallback(data);
+	        });
+	    }
+
+		var uniqueId = 1
+		function log(message, data) {
+			var log = document.getElementById('log')
+			var el = document.createElement('div')
+			el.className = 'logLine'
+			el.innerHTML = uniqueId++ + '. ' + message + ':<br/>' + JSON.stringify(data)
+			if (log.children.length) { log.insertBefore(el, log.children[0]) }
+			else { log.appendChild(el) }
+		}
+
+		bridge.registerHandler('testJavascriptHandler', function(data, responseCallback) {
+			log('ObjC called testJavascriptHandler with', data)
+			var responseData = { 'Javascript Says':'Right back atcha!' }
+			log('JS responding with', responseData)
+			responseCallback(responseData)
+        });
+        nativeFunc.deviceModel(function(model){
+            log('deviceModel', model);
+        });
+        nativeFunc.deviceId(function(deviceId){
+            log('deviceId', deviceId);
+        });
+        nativeFunc.deviceIP(function(deviceIP){
+            log('deviceIP', deviceIP);
+        });
+        nativeFunc.deviceOSVersion(function(deviceOSVersion){
+            log('deviceOSVersion', deviceOSVersion);
+        });
+        nativeFunc.getLocation(function(location){
+            log('getLocation', location);
+        });
+
+		document.body.appendChild(document.createElement('br'))
+
+		var callbackButton = document.getElementById('buttons').appendChild(document.createElement('button'))
+		callbackButton.innerHTML = 'Fire testObjcCallback'
+		callbackButton.onclick = function(e) {
+			e.preventDefault()
+			log('JS calling handler "testObjcCallback"')
+			bridge.callHandler('testObjcCallback', {'foo': 'bar'}, function(response) {
+				log('JS got response', response)
+			})
+		}
+
+		var callbackButton = document.getElementById('buttons').appendChild(document.createElement('button'))
+		callbackButton.innerHTML = 'SetGesturePwd'
+		callbackButton.onclick = function(e) {
+			e.preventDefault()
+			bridge.callHandler('setGesturePassword', {}, function(response) {
+				log('JS got response', response)
+			})
+		}
+
+		var callbackButton = document.getElementById('buttons').appendChild(document.createElement('button'))
+		callbackButton.innerHTML = 'CheckGesturePwd'
+		callbackButton.onclick = function(e) {
+			e.preventDefault()
+			bridge.callHandler('checkGesturePassword', {}, function(response) {
+				log('JS got response', response)
+			})
+		}
+
+		var callbackButton = document.getElementById('buttons').appendChild(document.createElement('button'))
+		callbackButton.innerHTML = 'SetFingerPrintPwd'
+		callbackButton.onclick = function(e) {
+			e.preventDefault()
+			bridge.callHandler('setFingerprintPassword', {}, function(response) {
+				log('JS got response', response)
+			})
+		}
+
+		var callbackButton = document.getElementById('buttons').appendChild(document.createElement('button'))
+		callbackButton.innerHTML = 'CheckFingerPrintPwd'
+		callbackButton.onclick = function(e) {
+			e.preventDefault()
+			bridge.callHandler('checkFingerprintPassword', {}, function(response) {
+				log('JS got response', response)
+			})
+		}
+
+		var callbackButton = document.getElementById('buttons').appendChild(document.createElement('button'))
+		callbackButton.innerHTML = 'newPageWithURL'
+		callbackButton.onclick = function(e) {
+			e.preventDefault()
+			bridge.callHandler('newPageWithURL', {'url': 'http://192.168.43.153:8080/appserver.html'}, function(response) {
+				log('JS got response', response)
+			})
+		}
+
+		var callbackButton = document.getElementById('buttons').appendChild(document.createElement('button'))
+		callbackButton.innerHTML = 'closePage'
+		callbackButton.onclick = function(e) {
+			e.preventDefault()
+			bridge.callHandler('closePage', {}, function(response) {
+				log('JS got response', response)
+			})
+		}
+
+	})
+	</script>
+	<div id='buttons'></div> <div id='log'></div>
+</body></html>

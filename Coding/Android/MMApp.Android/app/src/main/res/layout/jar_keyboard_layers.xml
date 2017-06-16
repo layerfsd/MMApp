@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- 最上面的3个按钮 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/keyboard_bg_up"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="3dip"
+            android:paddingRight="3dip"
+            android:paddingTop="2dip" >
+
+            <Button
+                android:id="@+id/jar_key_btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/key_nomal_order" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="0dip"
+                android:layout_weight="1" />
+
+           
+
+            <Button
+                android:id="@+id/jar_key_btn_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/key_complete" />
+        </LinearLayout>
+        <!-- 下面的四个图层 -->
+
+        <FrameLayout
+            android:id="@+id/jar_keyboard_frame"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/keyboard_bg_down"
+            android:paddingTop="8dip" >
+
+            <!-- 特殊字符层 -->
+
+            <LinearLayout
+                android:id="@+id/jar_layer_symbol"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" >
+
+                <include layout="@layout/jar_keyboard_layer_symbol2" />
+            </LinearLayout>
+            <!-- 数字 -->
+
+            <LinearLayout
+                android:id="@+id/jar_layer_digit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" >
+
+                <include layout="@layout/jar_keyboard_layer_digit2" />
+            </LinearLayout>
+            <!-- 小写层 -->
+
+            <LinearLayout
+                android:id="@+id/jar_layer_char_low"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" >
+
+                <include layout="@layout/jar_keyboard_layer_char_low2" />
+            </LinearLayout>
+            <!-- 大写层 -->
+
+            <LinearLayout
+                android:id="@+id/jar_layer_char_caps"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <include layout="@layout/jar_keyboard_layer_char_cap2" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</FrameLayout>

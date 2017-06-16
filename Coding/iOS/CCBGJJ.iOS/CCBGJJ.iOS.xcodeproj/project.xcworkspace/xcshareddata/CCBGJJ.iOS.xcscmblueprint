@@ -1,0 +1,32 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "3E6BE7F2F2AEF2DBA7EA346522332C9CE63FF3A4",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "70613751-c5db-4070-bd03-a4d26bd56289++1448" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "70613751-c5db-4070-bd03-a4d26bd56289++1448" : 9223372036854775807,
+    "3E6BE7F2F2AEF2DBA7EA346522332C9CE63FF3A4" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "DB5C4CE5-761E-4617-A4E7-C4C221111FC7",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "70613751-c5db-4070-bd03-a4d26bd56289++1448" : "..\/tmp\/shenkaisvn",
+    "3E6BE7F2F2AEF2DBA7EA346522332C9CE63FF3A4" : "ccbgjj\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "CCBGJJ.iOS",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Coding\/iOS\/CCBGJJ.iOS\/CCBGJJ.iOS.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/szyuyy\/ccbgjj.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3E6BE7F2F2AEF2DBA7EA346522332C9CE63FF3A4"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/128.128.98.1\/repos",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "70613751-c5db-4070-bd03-a4d26bd56289++1448"
+    }
+  ]
+}

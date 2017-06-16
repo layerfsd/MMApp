@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "A7732893B03F019BB9808A4CDCFD6DB00BFADB52",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "3E6BE7F2F2AEF2DBA7EA346522332C9CE63FF3A4" : 9223372036854775807,
+    "A7732893B03F019BB9808A4CDCFD6DB00BFADB52" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "92E21E09-ED53-4FD0-9913-77A5BFDE17B2",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "3E6BE7F2F2AEF2DBA7EA346522332C9CE63FF3A4" : "..\/..\/CCBGJJ\/repo\/ccbgjj",
+    "A7732893B03F019BB9808A4CDCFD6DB00BFADB52" : "MMApp\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MMApp.iOS",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Coding\/iOS\/MMApp.iOS\/MMApp.iOS.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/szyuyy\/ccbgjj.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3E6BE7F2F2AEF2DBA7EA346522332C9CE63FF3A4"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/szyuyy\/MMApp.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A7732893B03F019BB9808A4CDCFD6DB00BFADB52"
+    }
+  ]
+}

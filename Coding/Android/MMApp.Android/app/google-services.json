@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1028496315243",
+    "firebase_url": "https://testapp-d64b8.firebaseio.com",
+    "project_id": "testapp-d64b8",
+    "storage_bucket": "testapp-d64b8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1028496315243:android:527ef5ace2820cf7",
+        "android_client_info": {
+          "package_name": "com.huawei.mm.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1028496315243-s74kokhrlrq8739dff1kfa99qs1ftpod.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4odfkOY5zmouxIAFw162OlVVUmGfMkio"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

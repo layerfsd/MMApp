@@ -1,0 +1,104 @@
+/* 颜色配置 */
+@theme-bg-begin-color: #28A7E1; //背景起始色
+@theme-bg-end-color: #1B82D1; //背景结束色
+@theme-font-color: #fff; //主题字体颜色
+@theme-font-btn-color: #28A7E1; //主题按钮字体颜色
+@theme-text-color: #28A7E1; //主题文本字体颜色
+@font-btn-color:　#FF837F;//按钮中字体颜色
+@bg-btn-color: #fff; //按钮背景颜色
+@active-font-btn-color: #fff;//激活时按钮字体颜色
+@link-bg-btn-color: #1B82D1;//默认时按钮的颜色
+@active-bg-btn-color: #1365a3;//激活时按钮背景颜色
+@default-font-btn-color: #fff;//置灰时按钮字体颜色
+@default-bg-btn-color: #c6c6c6;//置灰时按钮背景颜色
+
+@import url('../mixin.less');
+
+// tabbar
+.tabbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 1rem;
+    background-color: #fff;
+    text-align: center;
+    font-size: 0;
+    .nav-item-home {
+        flex: 1;
+        .icon{
+            display: block;
+            margin: 0.17rem auto 0.08rem;
+            width: 21px;
+            height: 22px;
+            background-size: 21px 22px;
+            background-repeat: no-repeat;
+            vertical-align: top;
+        }
+        .icon-home{
+            .bg-image('home_n');
+        }
+        .span{
+            font-size: 0.24rem;
+            line-height: 0.18rem;
+            // color: #ABABAB
+        }
+        &.home-active{
+            color: @theme-text-color;
+            .icon{
+                .bg-image('home_tab_h');
+            }
+        }
+    }
+    .nav-item-mySales{
+        flex: 1;
+        .icon{
+            display: block;
+            width: 21px;
+            height: 21px;
+            background-size: 21px 21px;
+            background-repeat: no-repeat;
+            margin: 0.20rem auto 0.08rem;
+        }
+        .icon-mySales{
+            .bg-image('My-sales_tab_n');
+        }
+        .span{
+            font-size: 0.24rem;
+            line-height: 0.18rem;
+            // color: #ABABAB;
+        }
+        &.mySales-active{
+            color: @theme-text-color;
+            .icon{
+                .bg-image('My-sales_tab_h');
+            }
+        }
+    }
+    .nav-item-settings{
+        flex: 1;
+        .icon{
+            display: block;
+            width: 21px;
+            height: 21px;
+            background-size: 21px 21px;
+            background-repeat: no-repeat;
+            margin: 0.20rem auto 0.05rem;
+        }
+        .icon-settings{
+            .bg-image('set_tab_n');
+        }
+        .span{
+            font-size: 0.24rem;
+            line-height: 0.18rem;
+            // color: #ABABAB
+        }
+        &.settings-active{
+            color:@theme-text-color;
+            .icon{
+                .bg-image('set_tab_h');
+            }
+        }
+    }
+}

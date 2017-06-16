@@ -1,0 +1,92 @@
+.border-1px(@color){
+	position: relative;
+	&:after{
+		display: block;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		border-top: 1px solid @color;
+		content: '';
+	}
+}
+.border-none(){
+	&:after{
+		border-top:none;
+	}
+}
+
+.bg-image(@url){
+	background-image: url("~assets/images/common/@{url}_2x.png");
+	@media (-webkit-min-device-pixel-ratio: 3),(min-device-pixel-ratio: 3){
+		background-image: url("~assets/images/common/@{url}_3x.png");
+	}
+}
+
+.border(@color){
+	border: 1px solid @color;
+	@media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2){
+		border: 0.5px solid @color;
+	}
+	@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3){
+		border: 0.5px solid @color;
+	}
+}
+
+@link-color-black:#333333; // 黑色
+@link-color-lightgray:#999999; // 灰色
+@link-color-bKgray:#f3f3f3;//背景最底部灰色
+@link-color-white:#FFFFFF;//白色
+.border-1px-top(@color){
+	position: relative;
+	&:after{
+		display: block;
+		position: absolute;
+		left: 0;
+		bottom: 100%;
+		width: 100%;
+		border-top: 1px solid @color;
+		content: '';
+	}
+}
+
+/* 页面布局的基本样式 */
+.layout{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    font-size: 0.36rem;
+    background-color: #F5F5F5;
+    &:before {
+        content: "";
+        position: fixed;
+        z-index: -1;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: #fff;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+/* 优化mint-ui Header样式 */
+.com-mint-header{
+    .mint-header {
+            .border-1px(#eee);
+            height: 0.89rem;
+            background-color: #fff;
+            color: #333;
+            .mintui-back{
+                font-size: 0.44rem;
+            }
+            .mint-header-title {
+                flex: 5;
+                font-size: 0.36rem;
+                line-height: 0.9rem;
+            }
+        }
+}

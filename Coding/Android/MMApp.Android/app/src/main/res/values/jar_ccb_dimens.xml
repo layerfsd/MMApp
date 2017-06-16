@@ -1,0 +1,62 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="jar_activity_horizontal_margin">16dp</dimen>
+    <dimen name="jar_activity_vertical_margin">16dp</dimen>
+
+    <!-- 自定义键盘 -->
+    <dimen name="jar_key_board_margin_top">6dp</dimen>
+    <dimen name="jar_key_board_txt_size">17dp</dimen>
+    <!-- 单位 -->
+    <dimen name="jar_ccb_unit_1dp">1dp</dimen>
+    <dimen name="jar_ccb_unit_1sp">1sp</dimen>
+    <dimen name="jar_ccb_unit_1px">1px</dimen>
+
+    <!-- 字体大小预设值 -->
+    <dimen name="ccb_txt_size_index">13dp</dimen>
+    <dimen name="ccb_txt_size_small">15dp</dimen>
+    <dimen name="ccb_txt_size_mid">17dp</dimen>
+    <dimen name="ccb_txt_size_large">19dp</dimen>
+    <dimen name="ccb_txt_size_xlarge">21dp</dimen>
+    <dimen name="ccb_txt_size_title">19dp</dimen>
+
+    <!-- padding and margin -->
+    <dimen name="ccb_padding_xsmall">2.5dp</dimen>
+    <dimen name="ccb_padding_small">5dp</dimen>
+    <dimen name="ccb_padding_mid">10dp</dimen>
+    <dimen name="ccb_padding_large">20dp</dimen>
+    <dimen name="ccb_padding_xlarge">30dp</dimen>
+     <dimen name="ccb_padding_xlarge_top">100dp</dimen>
+    <dimen name="ccb_padding_big">50dp</dimen>
+    <dimen name="ccb_pop_window_height">320dp</dimen>
+
+    <!-- 适配:侧边栏相关 -->
+    <dimen name="drawer_width">240dp</dimen>
+    <dimen name="drawer_dial_margin_left">20dp</dimen>
+    <dimen name="drawer_level_one_pad_left">0dp</dimen>
+    <dimen name="drawer_level_one_img_txt_space">5dp</dimen>
+    <dimen name="drawer_level_one_left_img_size">25dp</dimen>
+    <dimen name="drawer_level_one_right_img_size">20dp</dimen>
+    <dimen name="drawer_level_one_txt_size_top">14dp</dimen>
+    <dimen name="drawer_level_one_txt_size_btm">12dp</dimen>
+    <dimen name="drawer_level_one_item_height">50dp</dimen>
+    <!-- 缩进 -->
+    <dimen name="list_indent">20dp</dimen>
+    <!-- 抽屉二级菜单图片大小(左图/右图) -->
+    <dimen name="drawer_level_two_item_height">40dp</dimen>
+    <dimen name="drawer_level_two_left_img_size">25dp</dimen>
+    <dimen name="drawer_level_two_right_img_size">20dp</dimen>
+    <dimen name="drawer_level_two_txt_size">14dp</dimen>
+    <dimen name="drawer_level_two_pad_left">10dp</dimen>
+    <dimen name="drawer_level_two_img_txt_space">5dp</dimen>
+    <!-- 二级菜单上下边距 -->
+    <dimen name="drawer_level_two_padding">2dp</dimen>
+
+    <!-- 分隔符高度 -->
+    <dimen name="ccb_divider_height">1dp</dimen>
+
+    <!-- 选择账户弹出框/ -->
+    <!-- <dimen name="ccb_pop_window_height">250dp</dimen> -->
+    <!-- <dimen name="wzqlib_padding_dialog">30dp</dimen> -->
+
+</resources>

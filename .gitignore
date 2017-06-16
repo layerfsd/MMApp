@@ -1,0 +1,21 @@
+.DS_Store
+# Built application files
+*.apk
+*.ap_
+*.o
+Coding/Android/CCBGJJ.Android/app/libs/
+# Files for the Dalvik VM
+*.dex
+
+# Java class files
+*.class
+
+# Log Files
+*.log
+
+# add liuym rm android studio .idea
+.idea
+
+#add liuym rm H5
+._.DS_Store
+.project

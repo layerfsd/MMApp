@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#525252"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="3dip"
+        android:paddingRight="3dip"
+        android:paddingTop="2dip">
+
+        <Button
+            android:id="@+id/jar_key_btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/jar_bg_pin_selector"
+            android:minWidth="50dp"
+            android:text="Random"
+            android:textColor="@color/jar_ccb_white" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="0dip"
+            android:layout_weight="1" />
+
+
+        <Button
+            android:id="@+id/jar_key_btn_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/jar_bg_pin_selector"
+            android:minWidth="50dp"
+            android:text="OK"
+            android:textColor="@color/jar_ccb_white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#525252"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/jar_digit_dig_1"
+                style="@style/pin_digit"
+                 />
+
+            <Button
+                android:id="@+id/jar_digit_dig_4"
+                style="@style/pin_digit"
+                />
+
+            <Button
+                android:id="@+id/jar_digit_dig_7"
+                style="@style/pin_digit"
+                />
+            <!-- @ -->
+
+            <Button
+                android:id="@+id/jar_digit_column_two_4"
+                style="@style/pin_digit"
+                android:background="@drawable/icon_bg_pin_delete_selector"
+                android:enabled="false"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/jar_digit_dig_2"
+                style="@style/pin_digit"
+                />
+
+            <Button
+                android:id="@+id/jar_digit_dig_5"
+                style="@style/pin_digit"
+                />
+
+            <Button
+                android:id="@+id/jar_digit_dig_8"
+                style="@style/pin_digit"
+                />
+
+            <Button
+                android:id="@+id/jar_digit_dig_A"
+                style="@style/pin_digit"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/jar_digit_dig_3"
+                style="@style/pin_digit"
+                />
+
+            <Button
+                android:id="@+id/jar_digit_dig_6"
+                style="@style/pin_digit"
+                />
+
+            <Button
+                android:id="@+id/jar_digit_dig_9"
+                style="@style/pin_digit"
+                />
+
+            <ImageButton
+                android:id="@+id/jar_digit_delete"
+                style="@style/pin_digit"
+                android:background="@drawable/icon_bg_pin_delete_selector"
+                android:src="@drawable/icon_pin_delete1"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

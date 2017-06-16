@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="jar_smart_white">#FFFFFF</color>
+    <color name="jar_smart_transparent">#00000000</color>
+    <color name="jar_smart_purple">#762CFB</color>
+     <color name="jar_smart_menu_item_bg">#1F2628</color>
+      <color name="jar_smart_gray">#CCCCCC</color>
+      <color name="jar_smart_black">#000000</color>
+
+</resources>

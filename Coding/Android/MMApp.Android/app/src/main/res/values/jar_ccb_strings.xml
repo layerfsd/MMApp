@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="jar_tag_edit_text_input_control" type="id"></item>
+    <item name="jar_tag_edit_text_delegate" type="id"></item>
+
+</resources>

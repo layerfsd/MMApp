@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_gesture_verify"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#48443c">
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="46dip"
+        android:layout_alignParentTop="true"
+        android:background="#555555"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/setup_gesture_pattern"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/text_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="right"
+            android:text="取消"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+        <!--android:textColor="@color/gesture_cancel_text_color"-->
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/gesture_tip_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_layout"
+        android:orientation="vertical"
+        android:paddingTop="10dip">
+
+        <ImageView
+            android:id="@+id/user_logo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/icon_4"
+            />
+
+        <TextView
+            android:id="@+id/text_phone_number"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:gravity="center_horizontal"
+            android:textColor="#8C806F" />
+
+        <TextView
+            android:id="@+id/text_tip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:gravity="center_horizontal"
+            android:textColor="#000000"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/gesture_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gesture_tip_layout" />
+    <!--<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="50dip"
+    android:orientation="horizontal">
+    <TextView android:id="@+id/text_forget_gesture" android:layout_width="fill_parent"
+              android:layout_height="wrap_content" android:layout_weight="1.0"
+              android:gravity="center" android:textSize="16sp"
+              android:text="@string/forget_gesture_code"
+              android:textColor="#E7E7E6" />
+    <TextView android:id="@+id/text_other_account"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_weight="1.0" android:gravity="center"
+              android:textSize="16sp"
+              android:text="@string/use_other_account_login"
+              android:textColor="#E7E7E6" />
+</LinearLayout>-->
+    <TextView
+        android:id="@+id/gesture_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="切换为密码登录"
+        android:textSize="15sp"
+        android:textColor="#fff" />
+</RelativeLayout>

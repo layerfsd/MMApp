@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>JG</title>
+    <!-- 基础设置 -->
+    <meta name="renderer" content="webkit">
+    <meta name="HandheldFriendly" content="true">
+    <!-- initial-scale=1, maximum-scale=1, minimum-scale=1, 有rem程序去设置-->
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <!-- <meta name="browsermode" content="application"> -->
+    <meta name="x5-page-mode" content="app">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="format-detection" content="telephone=no" />
+    <!-- http -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="Cache-Control" content="public">
+
+    <!-- 引入重置样式 为什么要加这个？-->
+
+    <link rel="stylesheet" href="./static/css/reset.css">
+
+    <!-- 引入mint ui样式 -->
+    <link rel="stylesheet" href="./static/css/mint-ui.min.css">
+
+    <!-- 引入framework7样式 -->
+    <!-- <link href="//cdn.bootcss.com/framework7/1.5.3/css/framework7.ios.min.css" rel="stylesheet">
+    <link href="//cdn.bootcss.com/framework7/1.5.3/css/framework7.ios.colors.min.css" rel="stylesheet"> -->
+    
+    <meta name="mobile-web-app-capable" content="yes" />
+
+    </head>
+    <body>
+        <div id="app"></div>
+    </body>
+
+    <script type="text/javascript">
+        <!--rem-->
+        // https://github.com/amfe/article/issues/17
+        !function(a,b){function c(){var b=f.getBoundingClientRect().width;b/i>750&&(b=750*i);var c=b/7.5;f.style.fontSize=c+"px",k.rem=a.rem=c}var d,e=a.document,f=e.documentElement,g=e.querySelector('meta[name="viewport"]'),h=e.querySelector('meta[name="flexible"]'),i=0,j=0,k=b.flexible||(b.flexible={});if(g){console.warn("将根据已有的meta标签来设置缩放比例");var l=g.getAttribute("content").match(/initial\-scale=([\d\.]+)/);l&&(j=parseFloat(l[1]),i=parseInt(1/j))}else if(h){var m=h.getAttribute("content");if(m){var n=m.match(/initial\-dpr=([\d\.]+)/),o=m.match(/maximum\-dpr=([\d\.]+)/);n&&(i=parseFloat(n[1]),j=parseFloat((1/i).toFixed(2))),o&&(i=parseFloat(o[1]),j=parseFloat((1/i).toFixed(2)))}}if(!i&&!j){var p=(a.navigator.appVersion.match(/android/gi),a.navigator.appVersion.match(/iphone/gi)),q=a.devicePixelRatio;i=p?q>=3&&(!i||i>=3)?3:q>=2&&(!i||i>=2)?2:1:1,j=1/i}if(f.setAttribute("data-dpr",i),!g)if(g=e.createElement("meta"),g.setAttribute("name","viewport"),g.setAttribute("content","initial-scale="+j+", maximum-scale="+j+", minimum-scale="+j+", user-scalable=no"),f.firstElementChild)f.firstElementChild.appendChild(g);else{var r=e.createElement("div");r.appendChild(g),e.write(r.innerHTML)}a.addEventListener("resize",function(){clearTimeout(d),d=setTimeout(c,300)},!1),a.addEventListener("pageshow",function(a){a.persisted&&(clearTimeout(d),d=setTimeout(c,300))},!1),"complete"===e.readyState?e.body.style.fontSize=12*i+"px":e.addEventListener("DOMContentLoaded",function(){e.body.style.fontSize=14*i+"px"},!1),c(),k.dpr=a.dpr=i,k.refreshRem=c,k.rem2px=function(a){var b=parseFloat(a)*this.rem;return"string"==typeof a&&a.match(/rem$/)&&(b+="px"),b},k.px2rem=function(a){var b=parseFloat(a)/this.rem;return"string"==typeof a&&a.match(/px$/)&&(b+="rem"),b}}(window,window.lib||(window.lib={}));
+    </script>
+    <!-- <script src="//cdn.bootcss.com/vue/2.1.10/vue.min.js"></script> -->
+    <!-- <script src="//cdn.bootcss.com/vue-router/2.2.0/vue-router.min.js"></script> -->
+    <!-- <script src="//cdn.bootcss.com/vuex/2.1.1/vuex.min.js"></script> -->
+
+    <!-- <script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script> -->
+    <!-- 引入组件库 -->
+    <!-- <script src="https://unpkg.com/mint-ui/lib/index.js"></script> -->
+</html>

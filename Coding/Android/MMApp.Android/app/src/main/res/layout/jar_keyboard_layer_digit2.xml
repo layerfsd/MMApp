@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 数字和特殊字符布局 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="3dip"
+    android:paddingRight="3dip" >
+
+    <!-- 第1列 -->
+
+   <LinearLayout
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+	   <Button
+		   android:id="@+id/jar_digit_column_one_1"
+		   android:layout_height="37dp"
+		   android:layout_width="wrap_content"
+		   android:layout_marginTop="0dp"
+		   android:background="@drawable/key_to_other"
+		   android:textColor="@drawable/key_dig_text_color_selector" />
+
+	   <Button
+		   android:id="@+id/jar_digit_column_one_2"
+		   android:layout_width="wrap_content"
+		   android:layout_height="37dp"
+		   android:layout_marginTop="5dp"
+		   android:background="@drawable/key_to_other"
+		   android:textColor="@drawable/key_dig_text_color_selector" />
+
+	   <Button
+		   android:id="@+id/jar_digit_column_one_3"
+		   android:layout_width="wrap_content"
+		   android:layout_height="37dp"
+		   android:layout_marginTop="5dp"
+		   android:background="@drawable/key_to_other"
+		   android:textColor="@drawable/key_dig_text_color_selector" />
+
+	   <Button
+		   android:id="@+id/jar_digit_column_one_4"
+		   android:layout_width="wrap_content"
+		   android:layout_height="37dp"
+		   android:layout_marginTop="5dp"
+		   android:background="@drawable/key_to_other"
+		   android:textColor="@drawable/key_dig_text_color_selector" />
+
+	   <Button
+		   android:id="@+id/jar_digit_to_abc"
+		   android:layout_width="wrap_content"
+		   android:layout_height="37dp"
+		   android:layout_marginTop="5dp"
+		   android:background="@drawable/key_to_other"
+		   android:text="abc"
+		   android:textColor="@drawable/key_dig_text_color_selector"
+		   android:textStyle="bold" />
+   </LinearLayout>
+
+	<View style="@style/padding2" />
+    <!-- 第2列:数字键盘a -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/jar_digit_dig_1"
+            android:layout_marginTop="0dp"
+            android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:background="@drawable/key_dig_digit"
+			android:textColor="@drawable/key_text_color01" />
+
+        <Button
+            android:id="@+id/jar_digit_dig_4"
+             android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="3dp" 
+			android:layout_weight="1"
+			android:background="@drawable/key_dig_digit"
+			android:textColor="@drawable/key_text_color01"/>
+
+        <Button
+            android:id="@+id/jar_digit_dig_7"
+             android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="3dp" 
+			android:layout_weight="1"
+			android:background="@drawable/key_dig_digit"
+			android:textColor="@drawable/key_text_color01"/>
+        <!-- @ -->
+
+        <Button
+            android:id="@+id/jar_digit_column_two_4"
+           android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="3dp" 
+			android:layout_weight="1"
+			android:background="@drawable/key_dig_digit"
+			android:textColor="@drawable/key_text_color01"/>
+    </LinearLayout>
+
+	<View style="@style/padding2" />
+    <!-- 第3列:数字键盘b -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/jar_digit_dig_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/key_dig_digit"
+            android:textColor="@drawable/key_text_color01" />
+
+        <Button
+            android:id="@+id/jar_digit_dig_5" 
+            android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="3dp" 
+			android:layout_weight="1"
+			android:background="@drawable/key_dig_digit"
+			android:textColor="@drawable/key_text_color01"/>
+
+        <Button
+            android:id="@+id/jar_digit_dig_8"
+            android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="3dp" 
+			android:layout_weight="1"
+			android:background="@drawable/key_dig_digit"
+			android:textColor="@drawable/key_text_color01"/>
+
+        <Button
+            android:id="@+id/jar_digit_dig_A"
+            android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="3dp" 
+			android:layout_weight="1"
+			android:background="@drawable/key_dig_digit"
+			android:textColor="@drawable/key_text_color01"/>
+    </LinearLayout>
+
+	<View style="@style/padding2" />
+    <!-- 第4列:数字键盘c -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/jar_digit_dig_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/key_dig_digit"
+            android:textColor="@drawable/key_text_color01" />
+
+        <Button
+            android:id="@+id/jar_digit_dig_6"
+            android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="3dp" 
+			android:layout_weight="1"
+			android:background="@drawable/key_dig_digit"
+			android:textColor="@drawable/key_text_color01"/>
+
+        <Button
+            android:id="@+id/jar_digit_dig_9"
+           android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="3dp" 
+			android:layout_weight="1"
+			android:background="@drawable/key_dig_digit"
+			android:textColor="@drawable/key_text_color01"/>
+
+        <Button
+            android:id="@+id/jar_digit_space"
+            android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="3dp" 
+			android:layout_weight="1"
+            android:background="@drawable/key_dig_space"
+            android:textColor="@drawable/key_dig_text_color_selector" />
+    </LinearLayout>
+
+	<View style="@style/padding2" />
+    <!-- 第5列 -->
+
+	<LinearLayout
+		android:layout_width="45dp"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:orientation="vertical">
+
+        <Button
+            android:id="@+id/jar_digit_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/key_dig_delete"
+            android:textColor="@drawable/key_dig_text_color_selector" />
+
+        <Button
+			android:id="@+id/jar_digit_column_five_2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="3dp"
+			android:background="@drawable/key_to_other"
+			android:textColor="@drawable/key_dig_text_color_selector" />
+
+
+		<Button
+			android:id="@+id/jar_digit_column_five_3"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="3dp"
+			android:background="@drawable/key_to_other"
+			android:textColor="@drawable/key_dig_text_color_selector" />
+
+		<Button
+			android:id="@+id/jar_digit_to_symbol"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="3dp"
+			android:background="@drawable/key_to_other"
+			android:text="符"
+			android:textColor="@drawable/key_dig_text_color_selector"
+			android:textStyle="bold" />
+	</LinearLayout>
+
+</LinearLayout>
